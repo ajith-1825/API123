@@ -1,0 +1,64 @@
+<%- include('partials/header') %>
+<!-- <div class=""> -->
+<div class="sidenav" style="color: white">
+  <h1>Username: <%= user.username %></h1>
+  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse">
+    <div class="position-sticky">
+      <div class="list-group list-group-flush mt-5">
+        <a
+          href="/main"
+          class="list-group-item list-group-item-action py-2 ripple active"
+          style="color: white"
+          aria-current="true"
+        >
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+        </a>
+        <a href="/main/desktop" class="list-group-item list-group-item-action py-2 ripple" style="color: white">
+          <i class="fas fa-desktop fa-fw me-3"></i><span>Desktop</span>
+        </a>
+        <a href="/main/orgainzer" class="list-group-item list-group-item-action py-2 ripple" style="color: white"
+          ><i class="fas fa-user fa-fw me-3"></i><span>Organizer</span></a
+        >
+        <a href="/main/graphical" class="list-group-item list-group-item-action py-2 ripple" style="color: white"
+          ><i class="fas fa-chart-line fa-fw me-3"></i><span>Graphical</span></a
+        >
+        <a href="/main/setup" class="list-group-item list-group-item-action py-2 ripple" style="color: white"
+          ><i class="fas fa-chart-line fa-fw me-3"></i><span>Setup</span></a
+        >
+        <a href="/main/money" class="list-group-item list-group-item-action py-2 ripple" style="color: white"
+          ><i class="fas fa-chart-line fa-fw me-3"></i><span>Money</span></a
+        >
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="">
+  <nav class=" main navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <h1>Welcome to the Main Page</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/main">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/main">Pricing</a>
+        </li>
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- </div> -->
+</div>
+<%- include('partials/footer') %>
